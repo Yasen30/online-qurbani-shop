@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Baloo Da 2", cursive;
+}
+.bottom-color-hover{
+  position: relative;
+  transition: 1s;
+}
+.bottom-color-hover::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width:0;
+  height: 3px;
+  margin: auto;
+  background-color:#dc3545cf ;
+  transition: 0.8s;
+}
+.bottom-color-hover:hover::before{
+  width: 100%;
+}
+.rounded-btn {
+  border-radius: 25px !important;
+  padding: 10px 20px !important;
+}
+.banner,
+.suscribe-area {
+  background: #dc3545cf;
+}
+.banner-image {
+  height: 280px;
+}
+.categroie {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  /* background: #F5F7FA; */
+  background: rgba(161, 158, 158, 0.24);
+}
+.categroie-detail {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.categroie-detail h1 {
+  position: absolute;
+  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.categroie:hover .categroie-detail {
+  display: block;
+  background-color: rgb(220 53 69 / 70%);
+}
+.categroie:hover .categroie-img {
+  transform: scale(0.9);
+  transition: 0.8s ease-out;
+}
+.card img {
+  height: 210px;
+}
